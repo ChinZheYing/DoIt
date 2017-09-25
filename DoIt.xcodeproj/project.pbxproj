@@ -14,6 +14,7 @@
 		303FCE3A1F792D9B009B2556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303FCE391F792D9B009B2556 /* Assets.xcassets */; };
 		303FCE3D1F792D9B009B2556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303FCE3B1F792D9B009B2556 /* LaunchScreen.storyboard */; };
 		303FCE451F7931B2009B2556 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FCE441F7931B2009B2556 /* Task.swift */; };
+		303FCE471F793C88009B2556 /* CreatTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303FCE461F793C88009B2556 /* CreatTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		303FCE3C1F792D9B009B2556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		303FCE3E1F792D9B009B2556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303FCE441F7931B2009B2556 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		303FCE461F793C88009B2556 /* CreatTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				303FCE2F1F792D9B009B2556 /* AppDelegate.swift */,
 				303FCE311F792D9B009B2556 /* ViewController.swift */,
 				303FCE331F792D9B009B2556 /* Main.storyboard */,
+				303FCE461F793C88009B2556 /* CreatTaskViewController.swift */,
 				303FCE441F7931B2009B2556 /* Task.swift */,
 				303FCE391F792D9B009B2556 /* Assets.xcassets */,
 				303FCE3B1F792D9B009B2556 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				303FCE381F792D9B009B2556 /* DoIt.xcdatamodeld in Sources */,
 				303FCE321F792D9B009B2556 /* ViewController.swift in Sources */,
 				303FCE301F792D9B009B2556 /* AppDelegate.swift in Sources */,
+				303FCE471F793C88009B2556 /* CreatTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
