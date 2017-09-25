@@ -33,7 +33,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
         if(task.important){
-            cell.textLabel?.text = "❗️ \(task.name)"
+            cell.textLabel?.text = "❗️  \(task.name)"
         } else{
             cell.textLabel?.text = task.name
         }
@@ -54,7 +54,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         task3.important = false
         
         return[task1,task2,task3 ]
-        
+    }
+    @IBAction func plusTapped(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue  ", sender: nil)
     }
     
 }
