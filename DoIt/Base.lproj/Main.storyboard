@@ -66,6 +66,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz9-Is-TS6">
                                 <rect key="frame" x="154.5" y="135" width="67" height="30"/>
                                 <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="vC7-Mj-vpO" eventType="touchUpInside" id="YNm-Om-rCr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,6 +80,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oOy-rU-Kqz"/>
                     </view>
+                    <connections>
+                        <outlet property="taskLabel" destination="4BV-A4-ig3" id="JzB-Tq-S5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sA-Cx-AqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
