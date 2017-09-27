@@ -40,6 +40,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = tasks[indexPath.row]
+        performSegue(withIdentifier: "selectTaskSegue", sender: task)
+    }
+    
     func makeTasks() -> [Task]{
         let task1 = Task()
         task1.name = "Walk the dog"
@@ -60,8 +65,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! CreatTaskViewController
-        nextVC.previousVC = self
+        if segue.identifier == "addSegue" {
+            let nextVC = segue.destination as! CreatTaskViewController
+            nextVC.previousVC = self
+        }
+        if segue.identifier == "selectTaskSegue " {
+            let nextVC = segue.destination as! CompleteTaskViewController
+            nextVC.task = sender as! Task
+        }
     }
     
 }
